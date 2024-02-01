@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bassant jwelery</title>
+    <link rel="icon" href="images/profile.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="fixed-top" >
+        <div class=" row ">
+          <div class="head d-flex justify-content-between" >
+            <div class="links ms-md-4 justify-content-sm-between">
+                <a href="#">Contact Us</a>
+                <a href="#" class="ms-4">Services</a>
+            </div>
+            <img class="logo"  src="images/logo.png" alt="" >
+            <div class="icons me-5 d-flex justify-content-between">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#" class="mx-md-3"><i class="far fa-heart"></i></a>
+                <a class="bag-icon"><i class="fas fa-shopping-bag"><span class="badge badge-cart">1</span></i></a>
+                <a class="ms-md-4 user-icon"><p class="username pt-1 d-none">TM</p><i class="far fa-user user d-none"></i></a>
+                
+                 
+            </div>
+            <div class="divprofile d-none ">
+              <h3 class="border-bottom ps-2 userfullname" style="line-height: 70px; color: rgb(170, 123, 65);"></h3>
+              <div class="px-3">
+                <a href="baglist.html" class="usercart d-block text-start mb-2">Your Cart</a>
+                <a href="#" class="userorder d-block text-start mb-2">Track Your Orders</a>
+                <a href="login.html" class="useraccount d-block text-start mb-2">Change Account</a>
+                <a class="logout d-block text-start mb-2"><i class="fas fa-sign-out-alt"></i>&nbsp; Log out</a>
+              </div>
+              
+            </div>
+          </div>
+  
+          <nav class="navbar navbar-expand-md  ">
+              <button class="navbar-toggler navBtn" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse border-bottom navbar-collapse py-3" id="collapsibleNavbar">
+                <ul class="navbar-nav container " >
+                  <li class="nav-item col-md-2 text-md-start px-3">
+                    <a class="nav-link " href="products.html">Jwelery</a>
+                  </li>
+                  <li class="nav-item col-md-2 text-md-start px-3">
+                    <a class="nav-link " href="#">Watches</a>
+                  </li>
+                  <li class="nav-item col-md-4 text-md-start px-3">
+                    <a class="nav-link " href="#">Bags And Accessories</a>
+                  </li> 
+                  <li class="nav-item col-md-4 text-md-start px-3">
+                    <a class="nav-link" href="#">Gifts And Occasions</a>
+                  </li> 
+                  <li class="nav-item res px-3">
+                    <a href="#" class="nav-link text-dark">Contact Us</a>
+                  </li>
+                  <li class="nav-item res px-3">
+                    <a href="#" class="nav-link text-dark">Services</a>
+                  </li>      
+                  
+                </ul>  
+              </div>
+            
+          </nav>
+  
+          
+    </header>
+  <!-- header ////////////////////////////////////////////////////////////////////////// -->
+  <div class="sec9">
+    <div class="container">
+        <h3 class="text-uppercase">shopping bag</h3>
+        <p class="text-center mt-5 d-none flagemtybag">Your shopping bag is empty</p>
+        <div class="bag-products mt-5 d-none"></div>
+    </div>
+  </div>
+
+  <!-- sec9-end ///////////////////////////////////////////////////////////////-->
+  <div class="sec10 container d-none">
+    <div class="totalprice row py-3">
+        <p class="totalprice-title col-6 ">SUBTOTAL</p>
+        <p class="totalprice-data text-end col-6"></p>
+        <p class="Salestax-title col-6 text-secondary">Sales tax</p>
+        <p class="Salestax-data text-end col-6">0.00 EGP</p>
+        <button class="btn btn-dark text-uppercase d-block mx-auto mt-4 checkout">Proceed to checkout</button>
+    </div>
+
+  </div>
+
+  <!-- total-price sec //////////////////////////////////////////////////////-->
+
+  <footer>
+    <div class="sec sec-footer row">
+      <div class="footer-links col-md-6 col-lg-3">
+        <h4>Customer Care</h4>
+        <div class="dropdown">
+          <button onclick="dropdownFunction(0)" class="dropbtn">
+            <a href="#" class="footer-item">Customer Care</a>
+            <svg xmlns="http://www.w3.org/2000/svg" height="100%" width="10" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"/></svg>
+          </button>
+          <ul class="dropdown-content">
+            <li class="mb-2"><a href="#">Contact Us</a></li>
+            <li class="mb-2"><a href="#">Call Now: 0100000000</a></li>
+            <li class="mb-2"><a href="#">Track Your Order</a></li>
+            <li class="mb-2"><a href="#">Book An Appointment</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-links col-md-6 col-lg-3">
+        <h4>Our Store</h4>
+        <div class="dropdown">
+          <button onclick="dropdownFunction(1)" class="dropbtn">
+            <a href="#" class="footer-item">Our Store</a>
+            <svg xmlns="http://www.w3.org/2000/svg" height="100%" width="10" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"/></svg>
+          </button>
+          <ul class="dropdown-content">
+            <li class="mb-2"><a href="#">Find A Boutique</a></li>
+            <li class="mb-2"><a href="#">Careers</a></li>
+            <li class="mb-2"><a href="#">Events & Occasions</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-links col-md-6 col-lg-3">
+        <h4>Legal Area</h4>
+        <div class="dropdown">
+          <button onclick="dropdownFunction(2)" class="dropbtn">
+            <a href="#" class="footer-item">Legal Area</a>
+            <svg xmlns="http://www.w3.org/2000/svg" height="100%" width="10" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"/></svg>
+          </button>
+          <ul class="dropdown-content">
+            <li class="mb-2"><a href="#">Terms Of Use</a></li>
+            <li class="mb-2"><a href="#">Privacy Policy</a></li>
+            <li class="mb-2"><a href="#">Conditions Of Sales</a></li>
+            <li class="mb-2"><a href="#">Credits</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-social col-md-6 col-lg-3 ">
+        <h4>Follow Us</h4>
+        <div class="social-media row justify-content-between ">
+          <a href="#" class="col-3"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="col-3"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="col-3"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="col-3"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+    </div>
+    <div class="Copyright d-flex justify-content-between align-items-center mt-5">
+      <div class="Copyright-img ">
+        <img src="images/profile.png" alt="" width="30px" height="30px">
+        <span class="ms-2 ">Bassant For Women</span>
+
+      </div>
+      <div class="Copyright-info">
+        <span>COPYRIGHT &copy; 2024 Bassant</span>
+      </div>
+      
+    </div>
+  </footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>   
+<script src="js/baglist.js"></script>
+<script src="js/general.js"></script>
+
+  
+</body>
+</html>
